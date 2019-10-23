@@ -40,8 +40,8 @@ def is_only_emoji(message):
 
 async def checking(message):
     try:
-        print(message.content)
-
+        if message.author.bot:
+            return
         if channels.__contains__(message.channel.id):
             if not is_only_emoji(message.content):
                 await message.delete()
