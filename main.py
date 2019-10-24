@@ -3,7 +3,7 @@
 # <a:python3:232720527448342530>
 # 01233333333456789ABCDEFGHIJKLM   #m=22  #value for custom_emoji
 
-import discord, emoji, time, asyncio
+import discord, emoji, time
 
 DISCORD_TOKEN = "NjM2NjU4NzAzMjAxODYxNjQ3.XbDKxA.8fwFXVshc0htnpk0OUZ1lhstDcY"    # Add your discord-token here
 emoji_channels = [543861314053996565]                                            #Add a List with all Channel-IDs as Integer here (for Emoji-Channel)
