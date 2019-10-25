@@ -1,0 +1,2 @@
+emoji_channels = [100000000000000000]      #Add a List with all Channel-IDs as Integer here (for Emoji-Channel)
+conuting_channels = [100000000000000000]   #Add a List with all Channel-IDs as Integer here (for Counting-Channel)

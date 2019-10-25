@@ -5,9 +5,8 @@
 
 import discord, emoji, time
 
-DISCORD_TOKEN = "NjM2NjU4NzAzMjAxODYxNjQ3.XbDKxA.8fwFXVshc0htnpk0OUZ1lhstDcY"    # Add your discord-token here
-emoji_channels = [543861314053996565]                                            #Add a List with all Channel-IDs as Integer here (for Emoji-Channel)
-conuting_channels = []                                                          #Add a List with all Channel-IDs as Integer here (for Counting-Channel)
+from STATICS import emoji_channels, conuting_channels
+from SECRETS import DISCORD_TOKEN
 
 client=discord.Client()
 
