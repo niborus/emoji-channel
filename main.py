@@ -56,8 +56,8 @@ async def is_nuber_right(new_message):
     message_before = messages[1]
 
     try:
-        new_number = int(new_message.content)
-        old_number = int(message_before.content)
+        new_number = int(new_message.content.replace('*', ''))
+        old_number = int(message_before.content.replace('*', ''))
         if new_number == old_number+1:
             return True
         else:
@@ -68,12 +68,12 @@ async def is_nuber_right(new_message):
 
 async def checking(message):
     try:
-        if message.author.bot:
-            time.sleep(2)
+        if message.author.bot and (message.channel.id in emoji_channels or message.channel.id in conuting_channels):
+            time.sleep(4)
             await message.delete()
             return
 
-        if emoji_channels.__contains__(message.channel.id):
+        elif emoji_channels.__contains__(message.channel.id):
             if not is_only_emoji(message.content):
                 await message.delete()
 
