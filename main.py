@@ -56,6 +56,8 @@ async def is_nuber_right(new_message):
     message_before = messages[1]
 
     try:
+        if message_before.author == new_message.author:
+            return False
         new_number = int(new_message.content.replace('*', ''))
         old_number = int(message_before.content.replace('*', ''))
         if new_number == old_number+1:
